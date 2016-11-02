@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言修改</title>
+</head>
+<body>
+<form action="?r=practice/show" method="post">
+	<table class='table'>
+		<tr>
+			<input type="hidden" value="<?php echo $data['id']?>" name='id'>
+			<input type="hidden" value="update" name='action'>
+		</tr>
+		<tr>
+			<td>留言内容：</td>
+			<td><textarea rows='5' clos='10' name='contents'><?php echo $data['contents']?></textarea></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value='修改'></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
